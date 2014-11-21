@@ -1,0 +1,995 @@
+﻿# -*- encoding: utf-8 -*-
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#   * BHC_Ingram
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20130904-231132\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-13 10:26+0000\n"
+"PO-Revision-Date: 2014-03-13 10:26+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:591
+#: code:addons/BHC_Ingram/sale.py:359
+#: code:addons/BHC_Ingram/stock_picking.py:212
+#, python-format
+msgid " Authentication or Authorization has failed; please re-submit your document with correct login credentials."
+msgstr "L'authentification à échouée; Vérifiez vos informations de connection."
+
+#. module: BHC_Ingram
+#: field:ingram_config,date_synchro:0
+msgid "Date of last manually synchronization"
+msgstr "Date de la dernière synchronization manuelle"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:239
+#, python-format
+msgid "products categories synchronization error"
+msgstr "Erreur de synchronisation des catégories de produits"
+
+#. module: BHC_Ingram
+#: help:ingram_config,supplier_id:0
+msgid "Supplier of this product"
+msgstr "Fournisseur"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:227
+#: code:addons/BHC_Ingram/ingram_config.py:272
+#, python-format
+msgid "Download started"
+msgstr "Téléchargement démarré"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Profil"
+msgstr "Profil"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:256
+#, python-format
+msgid "end synchronization"
+msgstr "Fin de la synchronization"
+
+#. module: BHC_Ingram
+#: field:ingram_config,supplier_id:0
+msgid "Supplier"
+msgstr "Fournisseur"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:245
+#: code:addons/BHC_Ingram/ingram_config.py:403
+#, python-format
+msgid "products synchronization ended"
+msgstr "Fin de la synchronisation des produits"
+
+#. module: BHC_Ingram
+#: field:purchase.order,ingramsalesordernumber:0
+msgid "Order number"
+msgstr "Numéro de commande"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Files"
+msgstr "Fichiers"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_purchase_order
+msgid "Purchase order"
+msgstr "Commande fournisseur"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:152
+#, python-format
+msgid "Already send order"
+msgstr "Commande déja envoyée"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:140
+#, python-format
+msgid "FTP connection was successfully!"
+msgstr "Connexion FTP réussie"
+
+#. module: BHC_Ingram
+#: field:ingram_config,chemin:0
+msgid "Path"
+msgstr "Chemin d'accès"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:244
+#, python-format
+msgid "the delivery address must have a Street!"
+msgstr "L'adresse de livraison doit avoir une rue!"
+
+#. module: BHC_Ingram
+#: view:purchase.order:0
+msgid "Cancel Order"
+msgstr "Annuler"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Set to inactive the product where the last synchro date from more than a week"
+msgstr "Rend inactif les produits dont la dernière synchro date de plus d'une semaine"
+
+#. module: BHC_Ingram
+#: help:ingram_config,location_id:0
+msgid " Location of new product"
+msgstr "Stock pour les nouveaux produits"
+
+#. module: BHC_Ingram
+#: field:purchase.order,ingramsalesorderdate:0
+msgid "Date order"
+msgstr "Date de commande"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:597
+#: code:addons/BHC_Ingram/sale.py:365
+#: code:addons/BHC_Ingram/stock_picking.py:218
+#, python-format
+msgid "Real-Time transactions are currently unavailable"
+msgstr "Transactions momentanément indisponible"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_sale_order
+msgid "Sale Order"
+msgstr "Commande client"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:589
+#: code:addons/BHC_Ingram/sale.py:357
+#: code:addons/BHC_Ingram/stock_picking.py:210
+#, python-format
+msgid "IngramSalesOrderType cannot have value ZRE or ZCR"
+msgstr "Commande Ingram erronée"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Delete Data"
+msgstr "Suppression des données"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:123
+#: code:addons/BHC_Ingram/ingram_config.py:137
+#, python-format
+msgid "Error!"
+msgstr "Erreur!"
+
+#. module: BHC_Ingram
+#: help:purchase.order.line,stockingr:0
+#: help:sale.order.line,stockingr:0
+msgid "Legend of the function price and avalability\n"
+"Blue = stock decreases\n"
+"Red = price of the supplier increases\n"
+"Green =prix of the supplier decreases"
+msgstr "Légende:\n"
+"Bleu = Le stock diminue\n"
+"Rouge = Le prix fournisseur à augmenté\n"
+"Vert = Le prix fournisseur à diminué"
+
+#. module: BHC_Ingram
+#: field:ingram_config,supplier_taxes_id:0
+msgid "Supplier Taxes"
+msgstr "Taxes fournisseur"
+
+#. module: BHC_Ingram
+#: field:ingram_config,xml_active:0
+msgid "XMl Request"
+msgstr "Requête XML"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:69
+#: code:addons/BHC_Ingram/purchase.py:324
+#: code:addons/BHC_Ingram/purchase.py:542
+#: code:addons/BHC_Ingram/sale.py:305
+#: code:addons/BHC_Ingram/stock_picking.py:161
+#, python-format
+msgid "Xml request inactive!"
+msgstr "Requête XML inactive!"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:285
+#, python-format
+msgid "the delivery address in the warehouse must have a City!"
+msgstr "L'adresse de livraison doit avoir une ville!"
+
+#. module: BHC_Ingram
+#: help:ingram_config,xml_passwd:0
+msgid "Password for Xml Request"
+msgstr "Mot de passe pour les requêtes XML"
+
+#. module: BHC_Ingram
+#: field:product.product,vpn:0
+msgid "VPN"
+msgstr "VPN"
+
+#. module: BHC_Ingram
+#: field:product.template,ingram:0
+msgid "Ingram Product"
+msgstr "Produit ingram"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:238
+#, python-format
+msgid "the delivery address must have a Pertner Name!"
+msgstr "L'adresse de livraison doit avoir un Partenaire"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:140
+#, python-format
+msgid "Ok!"
+msgstr "Ok!"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:237
+#: code:addons/BHC_Ingram/ingram_config.py:395
+#, python-format
+msgid "products categories synchronization ended"
+msgstr "Fin de la synchronisation des catégories de produits"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_purchase_order_line
+msgid "Purchase Order lines"
+msgstr "Lignes de commande d'achat"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:196
+#: code:addons/BHC_Ingram/purchase.py:238
+#: code:addons/BHC_Ingram/purchase.py:244
+#: code:addons/BHC_Ingram/purchase.py:250
+#: code:addons/BHC_Ingram/purchase.py:254
+#: code:addons/BHC_Ingram/purchase.py:258
+#: code:addons/BHC_Ingram/purchase.py:266
+#: code:addons/BHC_Ingram/purchase.py:273
+#: code:addons/BHC_Ingram/purchase.py:279
+#: code:addons/BHC_Ingram/purchase.py:285
+#: code:addons/BHC_Ingram/purchase.py:289
+#: code:addons/BHC_Ingram/purchase.py:293
+#: code:addons/BHC_Ingram/stock_picking.py:125
+#: code:addons/BHC_Ingram/stock_picking.py:133
+#, python-format
+msgid "Warning!"
+msgstr "Attention!"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:249
+#, python-format
+msgid "clean product started"
+msgstr "Nettoyage des produits démarré"
+
+#. module: BHC_Ingram
+#: help:ingram_config,name:0
+msgid "Name associated with the configuration"
+msgstr "Nom associé à la configuration"
+
+#. module: BHC_Ingram
+#: field:purchase.order.line,verif:0
+#: field:sale.order.line,verif:0
+msgid "Check"
+msgstr "Vérification"
+
+#. module: BHC_Ingram
+#: help:ingram_config,country_id:0
+msgid " Country of Ingram supplier"
+msgstr "Pays du fournisseur Ingram"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:273
+#, python-format
+msgid "the delivery address in the warehouse must have a Pertner Name!"
+msgstr "L'adresse de livraison de l'entrepot doit avoir un partenaire!"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:266
+#, python-format
+msgid "You must have a delivery address in the warehouse!"
+msgstr "Vous devez avoir une adresse de livraison pour votre entrepôt"
+
+#. module: BHC_Ingram
+#: field:ingram_config,server_address:0
+msgid "Server address"
+msgstr "Adresse du serveur"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "FTP Server"
+msgstr "Server FTP"
+
+#. module: BHC_Ingram
+#: field:ingram_config,file_cat:0
+msgid "Products Categories file name"
+msgstr "Nom du fichier contenant les catégorie de produits"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:289
+#, python-format
+msgid "the delivery address in the warehouse must have a zip!"
+msgstr "L'adresse de livraison de l'entrepôt doit avoir code postal"
+
+#. module: BHC_Ingram
+#: field:ingram_config,location_id:0
+msgid "Location"
+msgstr "Stock"
+
+#. module: BHC_Ingram
+#: field:product.template,last_synchro_ingram:0
+msgid "Synchro Date"
+msgstr "Date de synchronization"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Are you sure?"
+msgstr "Etes-vous sur?"
+
+#. module: BHC_Ingram
+#: view:purchase.order:0
+#: view:sale.order:0
+msgid "Price Availabilty"
+msgstr "Prix & Disponibilité"
+
+#. module: BHC_Ingram
+#: field:history.command,date:0
+#: help:history.command,date:0
+msgid "Expected Date"
+msgstr "Date Attendue"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_product_category
+msgid "Product Category"
+msgstr "Catégorie d'articles"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:146
+#: code:addons/BHC_Ingram/purchase.py:78
+#, python-format
+msgid "Error !"
+msgstr "Erreur !"
+
+#. module: BHC_Ingram
+#: field:ingram_config,date_cron:0
+msgid "Date of last cronjob synchronization"
+msgstr "Date de la dernière synchronisation via le plannificateur"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:78
+#, python-format
+msgid "You can not confirm purchase order without Purchase Order Lines."
+msgstr "Vous ne pouvez pas confirmer une commande d'achat sans ligne."
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_ingram_rel_tax
+#: model:ir.model,name:BHC_Ingram.model_ingram_rel_tax_purchase
+msgid "Tax relation with configuration"
+msgstr "Taxes"
+
+#. module: BHC_Ingram
+#: help:ingram_config,file_cat:0
+msgid "Name of the file for the products categories"
+msgstr "Nom du fichier pour l'importation des catégories de produits "
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:241
+#: code:addons/BHC_Ingram/ingram_config.py:399
+#, python-format
+msgid "products synchronization started"
+msgstr "Synchronisation des produits démarée"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:254
+#, python-format
+msgid "the delivery address must have a zip!"
+msgstr "L'adresse de livraison doit avoir un code postal"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+#: model:ir.actions.act_window,name:BHC_Ingram.action_ingram_form_config_bhc
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:279
+#, python-format
+msgid "the delivery address in the warehouse must have a Street!"
+msgstr "L'adresse de livraison de l'entrepôt doit avoir une rue!"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:137
+#, python-format
+msgid "Username/password FTP connection was not successfully!"
+msgstr "Utilisateur/mot de passe connexion FTP non réussie!"
+
+#. module: BHC_Ingram
+#: field:ingram_config,id_synchro:0
+msgid "Cronjob"
+msgstr "Plannificateur"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:254
+#, python-format
+msgid "clean product error"
+msgstr "Erreur lors du nettoyage des produits"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/stock_picking.py:133
+#, python-format
+msgid "Incomming isn't link to a order"
+msgstr "La réception n'est pas liée à une commande"
+
+#. module: BHC_Ingram
+#: help:ingram_config,categorie_id:0
+msgid "Select category for the current product"
+msgstr "Choisir une catégorie pour le produit"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_procurement_order
+msgid "Procurement"
+msgstr "Approvisionnement"
+
+#. module: BHC_Ingram
+#: model:ir.ui.menu,name:BHC_Ingram.menu_product_Ingram_config
+msgid "Product Ingram"
+msgstr "Produit Ingram"
+
+#. module: BHC_Ingram
+#: field:stock.picking,date_ingr:0
+#: help:stock.picking,date_ingr:0
+msgid "Delivry date"
+msgstr "Date de livraison"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Clean Data"
+msgstr "Nettoyage des Données"
+
+#. module: BHC_Ingram
+#: help:purchase.order,ingramsalesorderdate:0
+msgid "Date order at Ingram"
+msgstr "Date de commande chez Ingram"
+
+#. module: BHC_Ingram
+#: field:ingram_config,taxes_iden:0
+msgid "taxe id"
+msgstr "taxes"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_ingram_config
+msgid "Configuration Management Produces Ingram"
+msgstr "Configuration Gestion des produits Ingram"
+
+#. module: BHC_Ingram
+#: field:procurement.order,sendorder:0
+msgid "Sendorder"
+msgstr "Envoie de commande"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:297
+#, python-format
+msgid "connection error"
+msgstr "Erreur de connexion"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Download"
+msgstr "Téléchargement"
+
+#. module: BHC_Ingram
+#: field:ingram_config,categorie_id:0
+#: field:ingram_config,categorie_name:0
+msgid "Category"
+msgstr "Catégorie"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/procurement.py:138
+#, python-format
+msgid "Draft Purchase Order created"
+msgstr "Commande d'achat brouillon créée"
+
+#. module: BHC_Ingram
+#: help:ingram_config,categorie_name:0
+msgid "Name of the product categorie"
+msgstr "Nom de la catégorie des produits"
+
+#. module: BHC_Ingram
+#: help:ingram_config,id_synchro:0
+msgid "Cronjob in OpenERP for automatic synchronization. To bind the Cronjob with the configuration, click the button"
+msgstr "Action planifiée dans OpenERP pour la synchronisation automatique."
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:250
+#, python-format
+msgid "the delivery address must have a City!"
+msgstr "L'adresse de livraison doit avoir une ville"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:234
+#, python-format
+msgid "Synchronization started"
+msgstr "synchronisation démarée"
+
+#. module: BHC_Ingram
+#: field:ingram_config,file_prod:0
+msgid "Products File name"
+msgstr "Nom du fichier contenant les produits"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:137
+#, python-format
+msgid "All the purchases lines are invalid for the supplier"
+msgstr "Toutes les lignes sont invalides pour le fournisseur"
+
+#. module: BHC_Ingram
+#: help:product.product,vpn:0
+msgid "VPN code"
+msgstr "Code VPN"
+
+#. module: BHC_Ingram
+#: help:ingram_config,server_login:0
+msgid "Login database"
+msgstr "Nom d'utilisateur pour la connexion au serveur"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/procurement.py:122
+#, python-format
+msgid "PO: %s"
+msgstr "PO: %s"
+
+#. module: BHC_Ingram
+#: view:stock.picking.in:0
+msgid "Status"
+msgstr "Etat"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:382
+#, python-format
+msgid "Order Rejected"
+msgstr "Commande refusée"
+
+#. module: BHC_Ingram
+#: help:purchase.order,generate_po:0
+msgid "Purchase order generated from the Ingram Module if the PO have other product than the Ingram product."
+msgstr "Commande d'achat générée par le module Ingram si la commande contient des produits autres que des produits Ingram"
+
+#. module: BHC_Ingram
+#: field:ingram_rel_tax,id_conf:0
+#: field:ingram_rel_tax_purchase,id_conf:0
+msgid "id conf"
+msgstr "id conf"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Set to inactive all the Ingram product"
+msgstr "Rend inactif tout les produits Ingram"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:474
+#: code:addons/BHC_Ingram/purchase.py:595
+#: code:addons/BHC_Ingram/sale.py:363
+#: code:addons/BHC_Ingram/stock_picking.py:216
+#, python-format
+msgid " Transaction Failed : Data issue"
+msgstr "Transaction échouée : problème de données"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_stock_picking_in
+msgid "Incoming Shipments"
+msgstr "Réceptions"
+
+#. module: BHC_Ingram
+#: field:ingram_config,taxes_id:0
+msgid "Customer Taxes"
+msgstr "Taxes client"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:593
+#: code:addons/BHC_Ingram/sale.py:361
+#: code:addons/BHC_Ingram/stock_picking.py:214
+#, python-format
+msgid "Unable to process the document; please try to re-submit your document after sometime. If error persist contact technical support"
+msgstr "Impossible d'envoyer la demande; Veuillez ré-éssayer dans quelques minutes. Si le problème persiste, contactez le support technique"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Xml Server"
+msgstr "Server XML"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:152
+#: code:addons/BHC_Ingram/purchase.py:205
+#, python-format
+msgid "Information!"
+msgstr "Information!"
+
+#. module: BHC_Ingram
+#: field:ingram_config,synchro_active:0
+msgid "Synchro active"
+msgstr "Synchronisation active"
+
+#. module: BHC_Ingram
+#: help:ingram_config,file_prod:0
+msgid "Name of the file for the products. Must be based on this header: 'Ingram Part Number,Vendor Part Number,EANUPC Code,Plant,Vendor Number,Vendor Name,Weight,Category ID,Customer Price,Retail Price,Availability Flag,BOM Flag,Warranty Flag,Material Long Description,Material Creation Reason code,Material Language Code,Music Copyright Fees,Recycling Fees,Document Copyright Fees,Battery Fees,Availability (Local Stock),Availability (Central Stock),Creation Reason Type,Creation Reason Value,Local Stock Backlog Quantity,Local Stock Backlog ETA,Central Stock Backlog Quantity,Central Stock Backlog ETA'"
+msgstr "Nom du fichier pour la synchronisation des produits. La synchronisation ne fonctionne qu'avec le header suivant : 'Ingram Part Number,Vendor Part Number,EANUPC Code,Plant,Vendor Number,Vendor Name,Weight,Category ID,Customer Price,Retail Price,Availability Flag,BOM Flag,Warranty Flag,Material Long Description,Material Creation Reason code,Material Language Code,Music Copyright Fees,Recycling Fees,Document Copyright Fees,Battery Fees,Availability (Local Stock),Availability (Central Stock),Creation Reason Type,Creation Reason Value,Local Stock Backlog Quantity,Local Stock Backlog ETA,Central Stock Backlog Quantity,Central Stock Backlog ETA'"
+
+#. module: BHC_Ingram
+#: help:ingram_config,server_passwd:0
+msgid "Password database"
+msgstr "Mot de passe pour la connexion au serveur FTP"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:252
+#, python-format
+msgid "clean product ended"
+msgstr "Nettoyage des produits terminé"
+
+#. module: BHC_Ingram
+#: field:product.product,manufacturer:0
+#: help:product.product,manufacturer:0
+msgid "Manufacturer"
+msgstr "Fabricant"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:69
+#: code:addons/BHC_Ingram/purchase.py:324
+#: code:addons/BHC_Ingram/purchase.py:472
+#: code:addons/BHC_Ingram/purchase.py:474
+#: code:addons/BHC_Ingram/purchase.py:476
+#: code:addons/BHC_Ingram/purchase.py:478
+#: code:addons/BHC_Ingram/purchase.py:542
+#: code:addons/BHC_Ingram/purchase.py:587
+#: code:addons/BHC_Ingram/purchase.py:589
+#: code:addons/BHC_Ingram/purchase.py:591
+#: code:addons/BHC_Ingram/purchase.py:593
+#: code:addons/BHC_Ingram/purchase.py:595
+#: code:addons/BHC_Ingram/purchase.py:597
+#: code:addons/BHC_Ingram/sale.py:305
+#: code:addons/BHC_Ingram/sale.py:347
+#: code:addons/BHC_Ingram/sale.py:355
+#: code:addons/BHC_Ingram/sale.py:357
+#: code:addons/BHC_Ingram/sale.py:359
+#: code:addons/BHC_Ingram/sale.py:361
+#: code:addons/BHC_Ingram/sale.py:363
+#: code:addons/BHC_Ingram/sale.py:365
+#: code:addons/BHC_Ingram/stock_picking.py:161
+#: code:addons/BHC_Ingram/stock_picking.py:208
+#: code:addons/BHC_Ingram/stock_picking.py:210
+#: code:addons/BHC_Ingram/stock_picking.py:212
+#: code:addons/BHC_Ingram/stock_picking.py:214
+#: code:addons/BHC_Ingram/stock_picking.py:216
+#: code:addons/BHC_Ingram/stock_picking.py:218
+#, python-format
+msgid "ERROR: "
+msgstr "Erreur: "
+
+#. module: BHC_Ingram
+#: view:stock.picking.in:0
+msgid "History command"
+msgstr "Historique"
+
+#. module: BHC_Ingram
+#: field:ingram_config,mailto:0
+msgid "Warning Mail"
+msgstr "E-mail d'avertissement"
+
+#. module: BHC_Ingram
+#: field:purchase.order,generate_po:0
+msgid "Order Generated"
+msgstr "Commande générée"
+
+#. module: BHC_Ingram
+#: help:procurement.order,stockingr:0
+msgid "Stock Ingram from the SO."
+msgstr "Stock Ingram venant de la commande de vente"
+
+#. module: BHC_Ingram
+#: help:ingram_config,xml_address:0
+msgid "server Xml address"
+msgstr "Adresse du serveur XML"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Synchronize"
+msgstr "Synchronisation"
+
+#. module: BHC_Ingram
+#: field:purchase.order,sendmanuel:0
+msgid "Send manually"
+msgstr "Envoyé manuellement"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:99
+#: code:addons/BHC_Ingram/purchase.py:137
+#: code:addons/BHC_Ingram/purchase.py:399
+#, python-format
+msgid "Error"
+msgstr "Erreur"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:82
+#, python-format
+msgid "Purchase order '%s' is confirmed."
+msgstr "La commande d'achat '%s' a été confirmée."
+
+#. module: BHC_Ingram
+#: help:product.template,last_synchro_ingram:0
+msgid "Synchro date"
+msgstr "Date de synchronisation"
+
+#. module: BHC_Ingram
+#: help:ingram_config,chemin:0
+msgid "Path where the files is stored"
+msgstr "Chemin où les fichiers doivent être stockés"
+
+#. module: BHC_Ingram
+#: field:history.command,datemaj:0
+#: help:history.command,datemaj:0
+msgid "Updated date"
+msgstr "date de mise à jour"
+
+#. module: BHC_Ingram
+#: help:ingram_config,mailto:0
+msgid "Encode the adresses e-mail separated by ';'.\n"
+"Those e-mail will receive the warnings"
+msgstr "Adresse E-mail séparée par un ';'.\n"
+"Ces e-mails recevront les avertissements de synchronisation"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:247
+#: code:addons/BHC_Ingram/ingram_config.py:405
+#, python-format
+msgid "products synchronization error"
+msgstr "Erreur lors de la synchronisation des produits"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:258
+#, python-format
+msgid "the delivery address must have a Country!"
+msgstr "L'adresse de livraison doit avoir un pays"
+
+#. module: BHC_Ingram
+#: help:ingram_config,xml_active:0
+msgid "Active the Xml Request"
+msgstr "Active les requêtes XML"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:392
+#, python-format
+msgid "Products categories synchronization started"
+msgstr "Synchronisation des catégories de produits démarée"
+
+#. module: BHC_Ingram
+#: field:product.category,code_categ_ingram:0
+msgid "Ingram code category"
+msgstr "Code catégorie Ingram"
+
+#. module: BHC_Ingram
+#: field:ingram_config,date_import:0
+msgid "Date of last manually importation"
+msgstr "Date de la dernière importation manuelle"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:293
+#, python-format
+msgid "the delivery address in the warehouse must have a Country!"
+msgstr "L'adresse de livraison de l'entrepot doit avoir un pays!"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_history_command
+msgid "History of the status of the commands"
+msgstr "Historique des statut des commandes"
+
+#. module: BHC_Ingram
+#: view:sale.order:0
+msgid "Create Invoice"
+msgstr "Créer facture"
+
+#. module: BHC_Ingram
+#: view:purchase.order:0
+msgid "Purchase Order Lines"
+msgstr "Lignes d'ordre d'achat"
+
+#. module: BHC_Ingram
+#: view:purchase.order:0
+#: view:sale.order:0
+msgid "Color lines: Red: price increase; green: price decrease; Blue: stock decrease"
+msgstr "Couleur des lignes:  Rouge: Le prix à augmenté;  Vert: Le prix à diminué;  Bleu: le stock à diminué."
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:123
+#, python-format
+msgid "FTP was not started!"
+msgstr "Le FTP n'est pas démarré"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_product_product
+msgid "Product"
+msgstr "Article"
+
+#. module: BHC_Ingram
+#: field:history.command,description:0
+msgid "Description"
+msgstr "Description"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:587
+#: code:addons/BHC_Ingram/sale.py:355
+#: code:addons/BHC_Ingram/stock_picking.py:208
+#, python-format
+msgid "No results were found for given search criteria"
+msgstr "Aucun résultat trouvé"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Profils"
+msgstr "Profil"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:146
+#, python-format
+msgid "You can have only one configuration"
+msgstr "Vous ne pouvez avoir qu'une seule configuration"
+
+#. module: BHC_Ingram
+#: field:ingram_config,server_passwd:0
+#: field:ingram_config,xml_passwd:0
+msgid "Password"
+msgstr "Mot de passe"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Check FTP connection"
+msgstr "Check connexion FTP"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Sale Taxes"
+msgstr "Taxes de ventes"
+
+#. module: BHC_Ingram
+#: field:history.command,idmani:0
+#: field:stock.picking,history_lineb:0
+#: field:stock.picking.in,history_lineb:0
+msgid "idLabel"
+msgstr "Label"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Purchase Taxes"
+msgstr "Taxes d'achats"
+
+#. module: BHC_Ingram
+#: field:history.command,name:0
+#: field:ingram_config,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/sale.py:347
+#, python-format
+msgid "Product not available. SKU Attributes \"IsAvailable\" return value \"N\" "
+msgstr "Produit non disponible. L'attribut SKU \"IsAvailable\" retourne la valeur \"N\" "
+
+#. module: BHC_Ingram
+#: field:ingram_config,country_id:0
+msgid "Country"
+msgstr "Pays"
+
+#. module: BHC_Ingram
+#: help:purchase.order,ingramsalesordernumber:0
+msgid "Order number at Ingram"
+msgstr "Numéro de commande chez Ingram"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_product_template
+msgid "Product Template"
+msgstr "Modèle d'article"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:472
+#, python-format
+msgid "Transaction Failed - Preamble Level Failure"
+msgstr "Transaction échouée"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:399
+#, python-format
+msgid "All the purchases lines are rejected by the supplier"
+msgstr "Toutes les lignes de la commandes ont été rejetées par le fournisseur."
+
+#. module: BHC_Ingram
+#: field:ingram_config,xml_address:0
+msgid "Server Xml address"
+msgstr "Adresse du server XML"
+
+#. module: BHC_Ingram
+#: field:ingram_config,server_login:0
+#: field:ingram_config,xml_login:0
+msgid "Login"
+msgstr "Nom d'utilisateur"
+
+#. module: BHC_Ingram
+#: field:purchase.order,sendorder:0
+msgid "order sended"
+msgstr "Commande envoyée"
+
+#. module: BHC_Ingram
+#: field:ingram_rel_tax,id_tax:0
+#: field:ingram_rel_tax_purchase,id_tax:0
+msgid "id taxe"
+msgstr "id taxe"
+
+#. module: BHC_Ingram
+#: help:ingram_config,server_address:0
+msgid "server ip address"
+msgstr "Adresse IP du serveur"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:196
+#: code:addons/BHC_Ingram/purchase.py:205
+#: code:addons/BHC_Ingram/stock_picking.py:125
+#, python-format
+msgid "Connection failed"
+msgstr "Connexion échouée"
+
+#. module: BHC_Ingram
+#: field:procurement.order,stockingr:0
+#: field:purchase.order.line,stockingr:0
+#: field:sale.order.line,stockingr:0
+msgid "Stock Ingram"
+msgstr "Stock Ingram"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/purchase.py:163
+#, python-format
+msgid "The Purchase order '%s' is created."
+msgstr "La commande d'achat '%s' a été créée."
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:230
+#: code:addons/BHC_Ingram/ingram_config.py:275
+#, python-format
+msgid "Download ended"
+msgstr "Téléchargement fini"
+
+#. module: BHC_Ingram
+#: code:addons/BHC_Ingram/ingram_config.py:232
+#: code:addons/BHC_Ingram/ingram_config.py:283
+#: code:addons/BHC_Ingram/ingram_config.py:319
+#, python-format
+msgid "Download error"
+msgstr "Erreur lors du téléchargement"
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Actions"
+msgstr "Actions"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_stock_picking
+msgid "Packing List"
+msgstr "Liste de colisage"
+
+#. module: BHC_Ingram
+#: field:ingram_config,taxes_achats:0
+#: field:ingram_config,taxes_ventes:0
+msgid "ingram_config"
+msgstr "ingram_config"
+
+#. module: BHC_Ingram
+#: help:ingram_config,xml_login:0
+msgid "Login for Xml request "
+msgstr "Nom d'utilisateur pour les requêtes Xml "
+
+#. module: BHC_Ingram
+#: view:ingram_config:0
+msgid "Accounting"
+msgstr "Comptabilité"
+
+#. module: BHC_Ingram
+#: model:ir.model,name:BHC_Ingram.model_sale_order_line
+msgid "Sale Order line"
+msgstr "Ligne de commande"

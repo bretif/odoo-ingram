@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+   <data>
+     <!--  <record id="trans_confirmed_router2" model="workflow.transition">
+        <field name="act_from" ref="purchase.act_confirmed"/>
+        <field name="act_to" ref="purchase.act_router"/>
+        <field name="condition">test_supplier()</field>
+    </record>-->
+		<record id="purchase.trans_draft_confirmed" model="workflow.transition">
+			<field name="signal">purchase_confirm</field>
+			<field name="act_from" ref="purchase.act_draft"/>
+			<field name="act_to" ref="purchase.act_confirmed"/>
+			<field name="condition">check_po()</field>
+		</record>
+		
+		<record id="purchase.trans_sent_confirmed" model="workflow.transition">
+            <field name="act_from" ref="purchase.act_sent"/>
+            <field name="act_to" ref="purchase.act_confirmed"/>
+            <field name="signal">purchase_confirm</field>
+            <field name="condition">check_po()</field>
+        </record>
+		
+	</data>
+</openerp>

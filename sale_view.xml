@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+           <record id="view_order_form" model="ir.ui.view">
+            <field name="name">sale.order.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                    <button name="%(sale.action_view_sale_advance_payment_inv)d" string="Create Invoice"
+                            type="action" states="manual" class="oe_highlight" groups="base.group_user"  position="before">
+                        <button name="button_check" states="draft" string="Price Availabilty" type="object" icon="gtk-execute" help="Color lines: Red: price increase; green: price decrease; Blue: stock decrease"/>
+                    </button>
+                    <xpath expr="/form/sheet/notebook/page/field[@name='order_line']/form[@string='Sales Order Lines']/group/group/field[@name='price_unit']" position="after">
+                        <field name="stockingr"/>
+                    </xpath>
+                    <xpath expr="/form/sheet/notebook/page/field[@name='order_line']/tree[@string='Sales Order Lines']" position="replace">
+                        <tree string="Sales Order Lines" colors="red:verif=='3';green:verif=='2';blue:verif=='1'" editable="bottom">
+                                     <field name="sequence" widget="handle"/>
+                                     <field name="state" invisible="1"/>
+                                     <field name="th_weight" invisible="1"/>
+                                     <field name="product_id"
+                                         context="{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom}"
+                                         groups="base.group_user" 
+                                         on_change="product_id_change(parent.pricelist_id, product_id, product_uom_qty, product_uom, product_uos_qty, product_uos, name, parent.partner_id, False, True, parent.date_order, False, parent.fiscal_position, False, context)"/>                                                                                                                                          
+                                     <field name="name"/>
+                                     <field name="product_uom_qty"
+                                         context="{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom}"
+                                         on_change="product_id_change(parent.pricelist_id, product_id, product_uom_qty, product_uom, product_uos_qty, product_uos, name, parent.partner_id, False, False, parent.date_order, False, parent.fiscal_position, True, context)"/>
+                                     <field name="product_uom"
+                                         on_change="product_uom_change(parent.pricelist_id, product_id, product_uom_qty, product_uom, product_uos_qty, product_uos, name, parent.partner_id, False, False, parent.date_order, context)"
+                                         groups="product.group_uom" options='{"no_open": True}'/>
+                                     <field name="product_uos_qty" groups="product.group_uos" invisible="1"/>
+                                     <field name="product_uos" string="UoS" groups="product.group_uos" invisible="1"/>
+                                     <field name="tax_id" widget="many2many_tags" domain="[('parent_id','=',False),('type_tax_use','&lt;&gt;','purchase')]"/>
+                                     <field name="price_unit"/>
+                                     <field name="stockingr" readonly="True"/>
+                                     <field name="verif" invisible='True'/>
+                                     <field name="discount" groups="sale.group_discount_per_so_line"/>
+                                     <field name="price_subtotal"/>
+                                 </tree>
+                            </xpath>
+            </field>
+		</record> 
+    </data>
+</openerp>

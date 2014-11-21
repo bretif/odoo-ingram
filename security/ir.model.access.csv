@@ -1,0 +1,6 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"acces_ingram_config_admin","ingram_config_admin","model_ingram_config","base.group_system",1,1,1,1
+"acces_ingram_config_user_sales","ingram_config_user_sales","model_ingram_config","base.group_sale_salesman",1,0,0,0
+"acces_ingram_config_user_purchase","ingram_config_user_purchase","model_ingram_config","purchase.group_purchase_user",1,0,0,0
+"acces_ingram_config_user_warehouse","ingram_config_user_warehouse","model_ingram_config","stock.group_stock_user",1,0,0,0
+"acces_ingram_config_user_warehouse_history","ingram_config_user_warehouse_history","model_history_command","stock.group_stock_user",1,1,1,1

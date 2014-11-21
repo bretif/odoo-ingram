@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+   <data>
+   		<record model="ir.ui.view" id="ingram_tree_view_config">
+			<field name="name">ingram.tree.config</field>
+			<field name="model">ingram_config</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Profils">
+					<field name="name" />
+					<field name="server_address"/>
+					<field name="date_cron" />
+				</tree>
+			</field>
+		 </record>
+   		 <record model="ir.ui.view" id="ingram_form_view_config">
+		 	<field name="name">ingram.form.config</field>
+			<field name="model">ingram_config</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml" >
+			<form string="Profil" version="7.0" >	
+			    <header>
+			        <button name="check_ftp" string="Check FTP connection" type="object"/>
+			        <button name="button_import_data"  type="object" string="Download" />
+                    <button name="synchro_data"  type="object" string="Synchronize" />
+                    <button name="clean_data" type="object" string="Clean Data" help="Set to inactive the product where the last synchro date from more than a week"/>
+                    <button name="delete_data" type="object" string="Delete Data" confirm="Are you sure?" help="Set to inactive all the Ingram product"/>
+			    </header>
+			    <sheet>
+			        <notebook>
+			            <page string="Configuration">
+			                <group string="Configuration">
+	                            <group >
+		                            <field name="name" />
+		                            <field name="supplier_id" on_change="onchange_supplier_id(supplier_id)" />
+		                            <field name="country_id" />
+		                         </group>
+		                         <group>
+		                            <field name="location_id" />
+		                            <field name="categorie_id" />
+		                         </group>
+                            </group>
+                            <group>
+                               <field name="chemin" />
+                               <field name="mailto" />
+                            </group>
+                               <group string="FTP Server">
+	                                <field name="server_address" />
+	                                <field name="server_login" />
+	                                <field name="server_passwd" password="True"/>
+	                            </group>
+	                            <group string="Xml Server">
+	                                <field name="xml_address" />
+	                                <field name="xml_active" />
+	                                <field name="xml_login" />
+	                                <field name="xml_passwd" password="True" />
+	                            </group>
+	                            <group string="Actions">
+	                                <field name="id_synchro"/>
+	                                <field name="date_cron"/>
+	                                <field name="date_import"/>
+	                                <field name="date_synchro"/>
+	                            </group>
+	                            <group string="Files">
+                                    <field name="file_cat"/>
+                                    <field name="file_prod"/>
+                                </group>
+				        </page>
+			            <page string="Accounting">
+			                <group >
+                                <group string="Sale Taxes">
+                                    <field name="taxes_ventes" nolabel="1"  />
+                                </group>
+                                <group string="Purchase Taxes">
+                                    <field name="taxes_achats" nolabel="1"  />
+                                </group>
+                            </group>
+			            </page>
+			         </notebook>
+                </sheet>
+                </form>
+			</field>
+		</record>
+		
+		 <!-- Action sur le menu de configuration-->
+		<record model="ir.actions.act_window" id="action_ingram_form_config_bhc">
+			<field name="name">Configuration</field>
+			<field name="res_model">ingram_config</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="ingram_tree_view_config"/>
+		</record>
+		
+   		 <menuitem name="Product Ingram" id="menu_product_Ingram_config" 
+   		 action="action_ingram_form_config_bhc"  parent="stock.menu_stock_configuration" sequence="0"/>
+   </data>
+</openerp>

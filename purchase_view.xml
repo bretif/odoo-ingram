@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>        
+        <record id="purchase_order_form_in" model="ir.ui.view">
+            <field name="name">purchase.order.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <field name="company_id" position="after">
+                    <field name="generate_po" colspan="4"/>
+                </field>
+                <field colspan="4" name="order_line" nolabel="1" mode="tree,form" position="replace">
+                    <field colspan="4" name="order_line" nolabel="1" mode="tree">
+                        <tree string="Purchase Order Lines" colors="red:verif=='3';green:verif=='2';blue:verif=='1'">
+                            <field name="date_planned"/>
+                            <field name="name"/>
+                            <field name="product_qty"/>
+                            <field name="product_uom"/>
+                            <field name="stockingr"/>
+                            <field name="price_unit"/>
+                            <field name="price_subtotal"/>
+                            <field name="verif" invisible="1"/>
+                        </tree>
+                    </field>
+                </field>
+                <button name="purchase_cancel" states="draft,confirmed,sent" string="Cancel Order" position="before">
+                    <button name="button_check_AV" states="draft" string="Price Availabilty" type="object"  help="Color lines: Red: price increase; green: price decrease; Blue: stock decrease"/>
+                </button>              
+            </field>
+        </record>
+       
+    </data>
+</openerp>
